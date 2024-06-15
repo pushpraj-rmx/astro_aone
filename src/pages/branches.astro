@@ -1,0 +1,16 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PageTitle from "@components/Page-Title.astro";
+const pageTitle = "A One Global";
+const pageDescription = "";
+const pageKeywords = "";
+const pageAuthor = "";
+---
+
+<!-- src/pages/index.astro -->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <main>
+    <PageTitle title={pageTitle} />
+
+  </main>
+</MainLayout>

@@ -45,3 +45,27 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+<!--  -->
+
+# Sections
+
+- #### Countries
+
+- #### Services
+
+- #### Partner universities {clients}
+
+- #### Why Choose AONE GLOBSL
+
+- #### Our TReam
+
+- #### Testimoanisl
+
+- #### FAQ
+
+- #### contact & From
+
+- #### footer
+
+- #### Moving video

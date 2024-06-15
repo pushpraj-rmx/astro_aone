@@ -1,3 +1,8 @@
+---
+import logo from "@assets/img/logo/logo.webp";
+import { Image } from "astro:assets";
+---
+
 <!-- src/components/Header.astro -->
 <header>
   <div class="header-top">
@@ -5,33 +10,56 @@
       <div class="row align-items-center">
         <div class="col-xxl-8 col-lg-6">
           <div class="header-top-left">
-            <ul>
-              <li><span>Opening Time :</span> 8:30 AM - 9:30 PM</li>
+            <ul style="display: flex;">
+              <li style="margin-right: 30px;">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:delhi@theaoneglobal.com">delhi@theaoneglobal.com</a>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+91-9821670673">+91-9821670673</a>
+              </li>
             </ul>
           </div>
         </div>
         <div class="col-xxl-4 col-lg-6">
           <div class="topheader-info">
-            <div class="top-button f-right">
+            <!-- <div class="top-button f-right">
               <a href="contact.html">Apply Now</a>
-            </div>
-            <div class="header-language f-right">
-              <select>
-                <option data-display="English">English</option>
-                <option value="1">Bangla</option>
-                <option value="2">Arbi</option>
-                <option value="3">China</option>
-                <option value="4">Turky</option>
-              </select>
-            </div>
+            </div> -->
             <div class="header-location f-right">
-              <ul>
+              <ul style="display: flex;">
+                <li style="margin-right: 10px;">
+                  <i class="fas fa-headset"></i>
+                  <a href="/contact-us">Request a Callback</a>
+                </li>
+
                 <li>
-                  <i class="flaticon-pin"></i><a href="contact.html"
-                    >Our Location</a>
+                  <i class="fab fa-facebook"></i>
+                  <a href="" target="_blank"></a>
+                </li>
+                <li>
+                  <i class="fab fa-youtube"></i>
+                  <a href="" target="_blank"></a>
+                </li>
+                <li>
+                  <i class="fab fa-instagram"></i>
+                  <a href="contact.html" target="_blank"></a>
+                </li>
+                <li>
+                  <i class="fab fa-linkedin"></i>
+                  <a href=""></a>
                 </li>
               </ul>
             </div>
+            <!-- <div class="header-language f-right"> -->
+            <!-- <ul>
+                <li>
+                  <i class="fas fa-headset"></i>
+                  <a href="contact.html">Request a Callback</a>
+                </li>
+              </ul> -->
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -42,9 +70,7 @@
       <div class="row align-items-center">
         <div class="col-xxl-2 col-xl-2 col-lg-2 col-8">
           <div class="header-logo">
-            <a href="index.html"
-              ><img src="/img/logo/logo.png" class="img-fluid" alt="img" /></a
-            >
+            <a href="index.html"><Image src={logo} class="img-fluid" alt="img" /></a>
           </div>
         </div>
         <div class="col-xxl-7 col-xl-7 col-lg-7 col-4">
@@ -52,47 +78,42 @@
             <nav id="mobile-menu">
               <ul>
                 <li class="menu-item-has-children">
-                  <a href="index.html">HOME</a>
+                  <a>About</a>
                   <ul class="sub-menu">
-                    <li><a href="index.html">Home Style 1</a></li>
-                    <li><a href="index-2.html">Home Style 2</a></li>
+                    <li><a href="/our-team">Our Team</a></li>
+                    <li><a href="/branches">Branches</a></li>
                   </ul>
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="coaching.html">Coaching</a>
-                  <ul class="sub-menu">
+                  <a href="/services">Services</a>
+                  <!-- <ul class="sub-menu">
                     <li><a href="coaching.html">Coaching</a></li>
                     <li><a href="ielts-course.html">Coaching Details</a></li>
+                  </ul> -->
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="services.html">Destination</a>
+                  <ul class="sub-menu">
+                    <li><a href="services.html">Australia</a></li>
+                    <li><a href="business-visa.html">Canada</a></li>
+                    <li><a href="student-visa.html">UK</a></li>
+                    <li><a href="student-visa.html">USA</a></li>
                   </ul>
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="services.html">Services</a>
+                  <a href="#">Test Preparation</a>
                   <ul class="sub-menu">
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="business-visa.html">Services Details</a></li>
+                    <li><a href="about.html">IELTS Test Preparation</a></li>
+                    <li><a href="team.html">PTE Test Preparation</a></li>
+                    <li><a href="team-details.html">SAT Test Preparation</a></li>
+                    <li><a href="countries.html">TOEFL Preparation</a></li>
+                    <li><a href="united-states.html"> Interview Preparation</a></li>
                   </ul>
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="#">PAGES</a>
-                  <ul class="sub-menu">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="team-details.html">Team Details</a></li>
-                    <li><a href="countries.html">Countries</a></li>
-                    <li><a href="united-states.html">Country Details</a></li>
-                    <li><a href="partners.html">Partners</a></li>
-                    <li><a href="faq.html">Faq</a></li>
-                    <li><a href="404-error.html">404 Error</a></li>
-                  </ul>
+                  <a href="news.html">Contact Us</a>
                 </li>
-                <li class="menu-item-has-children">
-                  <a href="news.html">News</a>
-                  <ul class="sub-menu">
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="news-details.html">News Details</a></li>
-                  </ul>
-                </li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <!-- <li><a href="contact.html">Study Abroad</a></li> -->
               </ul>
             </nav>
           </div>
@@ -101,23 +122,18 @@
           </div>
         </div>
         <div class="col-xxl-3 col-xl-3 col-lg-3">
-          <div
-            class="main-menu-wrapper d-flex align-items-center justify-content-end"
-          >
-            <div class="main-menu-wrapper__search text-left">
-              <a class="search-btn nav-search search-trigger" href="#"
-                ><i class="fal fa-search"></i></a
-              >
-            </div>
-            <div
-              class="main-menu-wrapper__call-number d-flex align-items-center"
-            >
-              <div class="main-menu-wrapper__call-icon mr-10">
+          <div class="main-menu-wrapper d-flex align-items-center justify-content-end">
+            <!-- <div class="main-menu-wrapper__search text-left">
+              <a class="search-btn nav-search search-trigger" href="#"><i class="fal fa-search"></i></a>
+            </div> -->
+            <div class="main-menu-wrapper__call-number d-flex align-items-center">
+              <!-- <div class="main-menu-wrapper__call-icon mr-10">
                 <img src="/img/menu-icon/chatting.png" alt="" />
-              </div>
+              </div> -->
               <div class="main-menu-wrapper__call-text">
-                <span>Contact Us</span>
-                <h5><a href="tel:(555)58023059">(555) 5802 3059</a></h5>
+                <div class="top-button f-right">
+                  <a href="contact.html">Eligilibity Test</a>
+                </div>
               </div>
             </div>
           </div>

@@ -1,3 +1,8 @@
+---
+import logo from '@assets/img/logo/logo.webp'
+import { Image } from 'astro:assets'
+---
+
 <!-- src/components/Footer.astro --><!-- Footer start -->
 <footer class="footer-area footer-bg pt-95">
   <div class="container">
@@ -7,7 +12,7 @@
           <div class="footer-about-1-content">
             <div class="footer-logo footer-logo-3 mb-30">
               <a href="#"
-                ><img src="/img/footer-logo/f-logo.png" alt="" /></a
+                ><Image src={logo} alt="" /></a
               >
             </div>
             <p class="mb-50">

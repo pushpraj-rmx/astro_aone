@@ -1,7 +1,27 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import About2 from "../components/About2.astro";
+import Blog from "../components/Blog.astro";
+import CTA from "../components/CTA.astro";
+import Contact from "../components/Contact.astro";
+import Courses from "../components/Courses.astro";
+import CountryAll from "../components/CountryAll.astro";
+import FactArea from "../components/FactArea.astro";
+import FAQ from "../components/FAQ.astro";
+import Features from "../components/Features.astro";
+import Global from "../components/Global.astro";
+import Glowball from "../components/Glowball.astro";
 import Hero from "../components/Hero.astro";
+import OurPartners from "../components/OurPartners.astro";
+import OurPartnersAll from "../components/OurPartnersAll.astro";
+import Popular from "../components/Popular.astro";
+import Scholarship from "../components/Scholarship.astro";
+import TeamArea from "../components/TeamArea.astro";
+import Testimonials from "../components/Testimonials.astro";
 import Visa from "../components/Visa.astro";
+
+// import HeroSection from "@components/HeroSection";
+import About from "./about.astro";
 
 const pageTitle = "Home Page";
 const pageDescription = "Welcome to the home page of our website.";
@@ -10,17 +30,29 @@ const pageAuthor = "Site Author";
 ---
 
 <!-- src/pages/index.astro -->
-<MainLayout
-  title={pageTitle}
-  description={pageDescription}
-  keywords={pageKeywords}
-  author={pageAuthor}
->
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
   <main>
-<!-- <Hero /> -->
-<!-- <Visa /> -->
+    <Hero />
+    <Courses />
+    <!-- <HeroSection /> -->
+    <!-- <Visa /> -->
+    <!-- <Blog /> -->
+    <!-- <CTA /> -->
+    <!-- <CountryAll /> -->
+    <!-- <FactArea /> -->
+    <!-- <Features /> -->
+    <!-- <Global /> -->
+    <!-- <Glowball /> -->
+    <!-- <OurPartners /> -->
+    <OurPartnersAll />
+    <About2 />
+    <!--<Popular />-->
+    <!-- <Scholarship /> -->
+    <TeamArea />
+    <Testimonials />
+    <FAQ />
+    <Contact />
 
-
-
-</main>
+    <!-- <Visa /> -->
+  </main>
 </MainLayout>

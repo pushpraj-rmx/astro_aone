@@ -1,2 +1,9 @@
 /* GLOBAL.CSS */
 
+.brand-color {   
+    color:  #ed2f37 !important;
+}
+
+.brand-color-bg {   
+    background-color:  #ed2f37 !important;
+}
