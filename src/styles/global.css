@@ -1,9 +1,37 @@
 /* GLOBAL.CSS */
 
-.brand-color {   
-    color:  #ed2f37 !important;
+.brand-color {
+  color: #ed2f37 !important;
 }
 
-.brand-color-bg {   
-    background-color:  #ed2f37 !important;
+.brand-color-bg {
+  background-color: #ed2f37 !important;
+}
+
+.brand-color2 {
+  color: #0d5ba4 !important;
+}
+
+.brand-color2-bg {
+  background-color: #0d5ba4 !important;
+}
+
+.page-title-bg {
+  background-image: url(../assets/img/page-title-bg.jpg);
+}
+
+.team_bg {
+  background-image: url(../assets/img/team.webp);
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.fas .fa-headset .brand-color2 .font-bold {
+  font-weight: bold;
+}
+
+.nav-link.active {
+  background-color: #ed2f37 !important;
 }

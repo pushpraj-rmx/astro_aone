@@ -1,7 +1,14 @@
 ---
+// components
 import MainLayout from "../layouts/MainLayout.astro";
+import TeamArea from "@components/TeamArea.astro";
+import PageTitle from "@components/Page-Title.astro";
+import TeamHeader from "@components/TeamHeader.astro";
+import Image from "astro/components/Image.astro";
+// images
+import teamImage from "@assets/img/team.webp";
 
-const pageTitle = "A One Global";
+const pageTitle = "Our Team";
 const pageDescription = "";
 const pageKeywords = "";
 const pageAuthor = "";
@@ -9,5 +16,9 @@ const pageAuthor = "";
 
 <!-- src/pages/index.astro -->
 <MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
-  <main></main>
+  <main>
+    <PageTitle title={pageTitle} />
+    <TeamHeader />
+    <TeamArea />
+  </main>
 </MainLayout>

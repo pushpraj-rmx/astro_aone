@@ -1,6 +1,7 @@
 ---
+import PageTitle from "@components/Page-Title.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-
+import Contact from "@components/Contact.astro";
 const pageTitle = "Contact Page";
 const pageDescription = "Welcome to the Contact page of our website.";
 const pageKeywords = "contact, welcome, website";
@@ -8,11 +9,10 @@ const pageAuthor = "Site Author";
 ---
 
 <!-- src/pages/index.astro -->
-<MainLayout
-  title={pageTitle}
-  description={pageDescription}
-  keywords={pageKeywords}
-  author={pageAuthor}
->
-  <main></main>
+<MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
+  <PageTitle title={pageTitle}/>
+
+  <main>
+    <Contact />
+  </main>
 </MainLayout>

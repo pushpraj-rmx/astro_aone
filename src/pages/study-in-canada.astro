@@ -1,5 +1,9 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Country from "@components/Country.astro";
+import PageTitle from "@components/Page-Title.astro";
+import Image from "astro/components/Image.astro";
+import CanadaImg from "@assets/img/country-img/Canada-places.jpg";
 
 const pageTitle = "A One Global";
 const pageDescription = "";
@@ -9,5 +13,285 @@ const pageAuthor = "";
 
 <!-- src/pages/index.astro -->
 <MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
-  <main></main>
+  <main>
+    <PageTitle title="Study in Canada" />
+    <div class="united-stats-area pt-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="united-states">
+              <div class="united-states__thumb mb-40">
+                <img src="assets/img/united-states/united-details.jpg" alt="" />
+              </div>
+              <style>
+                .text-center {
+                  text-align: center !important;
+                }
+
+                .tab-pane {
+                  display: none;
+                }
+                .tab-pane.active {
+                  display: block;
+                }
+                .nav-tabs {
+                  flex-direction: column;
+                }
+                .nav-tabs .nav-link {
+                  border: 1px solid #dee2e6;
+                  border-radius: 0.25rem;
+                  margin-bottom: 0.5rem;
+                }
+                .nav-tabs .nav-link.active {
+                  background-color: #007bff;
+                  color: white;
+                }
+              </style>
+              <h3 class="united-states__title mb-15 text-center">Study in Canada</h3>
+              <!-- <Image src={CanadaImg} alt="" height="500"/> -->
+              <p class="mb-30">
+                Study in Canada implies getting extraordinary schooling in an energetic spot. Individuals from everywhere in the world come to Canada because the universities are great and
+                provide education in various subjects. Canada is known for its first rate education and cool research labs. There are countless courses to look over, so you can concentrate on
+                anything you like.
+              </p>
+              <p class="mb-25">
+                The combination of academic excellence, cultural diversity, and breathtaking landscapes that Canada has to offer is one of a kind. Students can acquire valuable skills and knowledge
+                in their chosen fields through world-class universities and innovative teaching methods. Canada's vibrant cities, stunning natural beauty, and friendly locals offer a rich and
+                satisfying experience beyond academia. Canada awaits to inspire, challenge, and empower you to reach new heights in your academic and personal endeavours.
+              </p>
+            </div>
+
+            <div class="cta-wrap" style="display: flex;align-items: center;justify-content: center;">
+              <div class="theme-btn">Get Assistance for Study in Canada</div>
+            </div>
+            <br /><br />
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xxl-3 col-xl-3 col-lg-3">
+                <!-- Main Country Tabs (vertical on the left) -->
+                <ul class="nav nav-tabs" id="mainTabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#Why_Choose_Canada" data-toggle="tab">Why Choose Canada</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#VISA_Requirements" data-toggle="tab">VISA Requirements</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Study_Cost" data-toggle="tab">Study Cost</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Scholarship_Opportunity" data-toggle="tab">Scholarship Opportunity</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Intake_Details" data-toggle="tab">Intake Details</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Top_Colleges_Universities" data-toggle="tab">Top Colleges & Universities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Employment_Opportunities" data-toggle="tab">Employment Opportunities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Living_Costs" data-toggle="tab">Living Costs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Life_in_Canada" data-toggle="tab">Life in Canada</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Conclusion" data-toggle="tab">Conclusion</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-xxl-9 col-xl-9 col-lg-9">
+                <!-- Country Content -->
+                <div class="tab-content">
+                  <!-- Canada Content -->
+                  <div class="tab-pane active" id="Why_Choose_Canada">
+                    <h3 class="united-states__title mb-15">About Canada</h3>
+                    <p>
+                      The United States of America, commonly known as the United States or America, is a country primarily located in North America. It consists of 50 states, a federal district, five
+                      major unincorporated territories, 326 Indian reservations, and some minor possessions. At 3.8 million square miles, it is the world's third- or fourth-largest country by total
+                      area.
+                    </p>
+                    <h3 class="united-states__title2 mb-25">Why Choose the United States</h3>
+                    <p>
+                      The city was named for Lewis Kingman, a civil engineer for what was then the Atchison, Topeka and Santa Fe Railroad constructed there in the 1880s. Ghost towns in the area attest
+                      to the lode mines that once yielded many millions of dollars in gold. Tourism, manufacturing and distribution.
+                    </p>
+                    <h3 class="united-states__title3 mb-25">Life Styles</h3>
+                    <p>
+                      An applicant should apply at center in or closest to the city in which you are documented as being a resident. Please contact VFS Global if you have any doubts. This crossword
+                      explores the various paths humankind can follow to create a more sustainable world. Find out how many ways we can change our approach to the environment.
+                    </p>
+                    <h3 class="united-states__title3 mb-25">Law & Rules</h3>
+                    <p>
+                      The United States of America, commonly known as the United States or America, is a country primarily located in North America. It consists of 50 states, a federal district, five
+                      major unincorporated territories, 326 Indian reservations, and some minor possessions. At 3.8 million square miles, it is the world's third- or fourth-largest country by total
+                      area.
+                    </p>
+                    <h3 class="united-states__title3 mb-25">Beautiful Cities</h3>
+                    <p>This is a list of selected cities, towns, and other populated places in the United States, ordered alphabetically by state.</p>
+                    <ul>
+                      <li>New York</li>
+                      <li>Chicago</li>
+                      <li>Washington DC</li>
+                      <li>Alabama</li>
+                      <li>California</li>
+                      <li>Florida</li>
+                    </ul>
+                    <h3 class="united-states__title3 mb-25">Universities</h3>
+                    <table class="table table-bordered">
+                      <tr>
+                        <th>SL</th>
+                        <th>Name of Universities</th>
+                        <th>Ranking</th>
+                      </tr>
+                      <tr>
+                        <td>01</td>
+                        <td>Harvard University</td>
+                        <td>01</td>
+                      </tr>
+                      <tr>
+                        <td>02</td>
+                        <td>Johns Hopkins University</td>
+                        <td>02</td>
+                      </tr>
+                      <tr>
+                        <td>03</td>
+                        <td>California Institute of Technology - Caltech</td>
+                        <td>03</td>
+                      </tr>
+                      <tr>
+                        <td>04</td>
+                        <td>Princeton University</td>
+                        <td>04</td>
+                      </tr>
+                      <tr>
+                        <td>05</td>
+                        <td>University of California, Berkeley</td>
+                        <td>05</td>
+                      </tr>
+                      <tr>
+                        <td>06</td>
+                        <td>Yale University</td>
+                        <td>06</td>
+                      </tr>
+                      <tr>
+                        <td>07</td>
+                        <td>Massachusetts Institute of Technology (MIT)</td>
+                        <td>07</td>
+                      </tr>
+                      <tr>
+                        <td>08</td>
+                        <td>University of Chicago</td>
+                        <td>08</td>
+                      </tr>
+                      <tr>
+                        <td>09</td>
+                        <td>University of Pennsylvania</td>
+                        <td>09</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>Stanford University</td>
+                        <td>10</td>
+                      </tr>
+                    </table>
+                    <h3 class="united-states__title3 mb-25">Historical Places</h3>
+                    <p>
+                      An applicant should apply at center in or closest to the city in which you are documented as being a resident. Please contact VFS Global if you have any doubts as to where to
+                      make your application. Applicants are permitted.
+                    </p>
+                    <div class="historical-places__thumb d-flex align-items-center">
+                      <div class="historical-places__thumb-left mr-30">
+                        <img src="assets/img/united-states/histry-1.jpg" alt="" />
+                      </div>
+                      <div class="historical-places__thumb-right">
+                        <img src="assets/img/united-states/histry-2.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- UK Content -->
+                  <div class="tab-pane" id="VISA_Requirements">
+                    <h3 class="united-states__title mb-15">About UK</h3>
+                    <!-- Add UK content here -->
+                  </div>
+
+                  <!-- Canada Content -->
+                  <div class="tab-pane" id="Study_Cost">
+                    <h3 class="united-states__title mb-15">About Canada</h3>
+                    <!-- Add Canada content here -->
+                  </div>
+
+                  <!-- Canada Content -->
+                  <div class="tab-pane" id="Scholarship_Opportunity">
+                    <h3 class="united-states__title mb-15">About Canada</h3>
+                    <!-- Add Canada content here -->
+                  </div>
+                  <div class="tab-pane" id="Intake_Details">
+                    <h3 class="united-states__title mb-15">About Canada</h3>
+                    <!-- Add Canada content here -->
+                  </div>
+                  <div class="tab-pane" id="Top_Colleges_Universities">
+                    <h3 class="united-states__title mb-15">About Canada</h3>
+                    <!-- Add Canada content here -->
+                  </div>
+                  <div class="tab-pane" id="Employment_Opportunities">
+                    <h3 class="united-states__title mb-15">About Canada</h3>
+                    <!-- Add Canada content here -->
+                  </div>
+                  <div class="tab-pane" id="Living_Costs">
+                    <h3 class="united-states__title mb-15">About Canada</h3>
+                    <!-- Add Canada content here -->
+                  </div>
+                  <div class="tab-pane" id="Life_in_Canada">
+                    <h3 class="united-states__title mb-15">About Canada</h3>
+                    <!-- Add Canada content here -->
+                  </div>
+                  <div class="tab-pane" id="Conclusion">
+                    <h3 class="united-states__title mb-15">About Canada</h3>
+                    <!-- Add Canada content here -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              // Function to handle tab switching
+              function handleTabSwitch(tabButtons, tabPanes) {
+                tabButtons.forEach((button) => {
+                  button.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+                    // Remove active class from all tab buttons and tab panes
+                    tabButtons.forEach((btn) => btn.classList.remove("active"));
+                    tabPanes.forEach((pane) => pane.classList.remove("active"));
+
+                    // Add active class to the clicked tab button
+                    button.classList.add("active");
+
+                    // Add active class to the corresponding tab pane
+                    const targetPaneId = button.getAttribute("href").substring(1);
+                    const targetPane = document.getElementById(targetPaneId);
+                    targetPane.classList.add("active");
+                  });
+                });
+              }
+
+              // Handle main country tabs
+              const mainTabButtons = document.querySelectorAll("#mainTabs .nav-link");
+              const mainTabPanes = document.querySelectorAll(".tab-content .tab-pane");
+              handleTabSwitch(mainTabButtons, mainTabPanes);
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </main>
 </MainLayout>

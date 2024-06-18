@@ -1,14 +1,21 @@
+---
+import Image from 'astro/components/Image.astro'
+import whyAoneImg from '@assets/img/why-aone.webp'
+---
+
+
+
 <!-- About-2 area start here -->
 <section class="about-area-2 pt-90 pb-85 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
     <div class="container">
         <div class="row">
             <div class="col-xxl-6 col-xl-6 col-lg-6 mb-30">
                 <div class="about2-left d-flex">
-                    <div class="about2-left__img1 mr-10">
-                        <img src="assets/img/about-2/about2.jpg" alt="">
-                    </div>
+                    <!-- <div class="about2-left__img1 mr-10">
+                        <Image src={whyAoneImg} alt="">
+                    </div> -->
                     <div class="about2-left__img2">
-                        <img src="assets/img/about-2/about2-1.jpg" alt="">
+                        <Image src={whyAoneImg} alt="">
                         <div class="about2-left__info d-flex align-items-center">
                             <div class="about2-left__info__left mr-15">
                                 <img src="assets/img/about-2/seal.png" alt="">
@@ -24,7 +31,7 @@
             <div class="col-xxl-6 col-xl-6 col-lg-6 mb-30">
                 <div class="section_title_wrapper">
                     <span class="subtitle">
-                        About visapass
+                        Why Choose A ONE Global ?
                     </span>                       
                     <h2 class="section-title about-span mb-30">
                         <span>25+</span>  Years of Your Trust <br> and Recommendation

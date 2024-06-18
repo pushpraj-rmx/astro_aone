@@ -4,8 +4,10 @@ import About2 from "../components/About2.astro";
 import Blog from "../components/Blog.astro";
 import CTA from "../components/CTA.astro";
 import Contact from "../components/Contact.astro";
-import Courses from "../components/Courses.astro";
-import CountryAll from "../components/CountryAll.astro";
+import Courses from "../components/CoursesHome.astro";
+import TopCountries from "../components/TopCountries.astro";
+
+// import CountryAll from "../components/CountryAll.astro";
 import FactArea from "../components/FactArea.astro";
 import FAQ from "../components/FAQ.astro";
 import Features from "../components/Features.astro";
@@ -13,15 +15,18 @@ import Global from "../components/Global.astro";
 import Glowball from "../components/Glowball.astro";
 import Hero from "../components/Hero.astro";
 import OurPartners from "../components/OurPartners.astro";
-import OurPartnersAll from "../components/OurPartnersAll.astro";
+// import OurPartnersAll from "../components/OurPartnersAll.astro";
 import Popular from "../components/Popular.astro";
+import Services from "@components/Services.astro";
 import Scholarship from "../components/Scholarship.astro";
 import TeamArea from "../components/TeamArea.astro";
+import TeamHomeHeader from "../components/TeamHomeHeader.astro";
 import Testimonials from "../components/Testimonials.astro";
 import Visa from "../components/Visa.astro";
 
 // import HeroSection from "@components/HeroSection";
 import About from "./about.astro";
+// import Services from "@components/Services.astro";
 
 const pageTitle = "Home Page";
 const pageDescription = "Welcome to the home page of our website.";
@@ -43,15 +48,19 @@ const pageAuthor = "Site Author";
     <!-- <Features /> -->
     <!-- <Global /> -->
     <!-- <Glowball /> -->
-    <!-- <OurPartners /> -->
-    <OurPartnersAll />
+    <Services />
+    <TopCountries />
+    <!-- <CountryAll /> -->
+    <OurPartners />
+    <!-- <OurPartnersAll /> -->
     <About2 />
     <!--<Popular />-->
     <!-- <Scholarship /> -->
+    <TeamHomeHeader />
     <TeamArea />
     <Testimonials />
     <FAQ />
-    <Contact />
+    <!-- <Contact /> -->
 
     <!-- <Visa /> -->
   </main>
