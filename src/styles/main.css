@@ -44,6 +44,11 @@
     - Overlay
 ------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,700&amp;display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 [data-overlay] {
   position: relative;
   background-size: cover;
@@ -191,7 +196,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #1A1C20;
   margin: 0px;
   font-style: normal;
@@ -1739,7 +1744,7 @@ select {
 .page-title__area {
   position: relative;
   z-index: 1;
-  background-position: center center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1748,7 +1753,7 @@ select {
   content: "";
   width: 100%;
   height: 100%;
-  background: rgb(0 0 0 / 86%);
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.6), rgba(0, 0, 255, 0.6));
   top: 0;
   left: 0;
   transform: scale(1);
@@ -1871,6 +1876,54 @@ select {
   transform: rotate(90deg);
 }
 .theme-btn:hover {
+  background: #1A1C20;
+  color: #ffffff;
+}
+
+.theme-btn2 {
+  font-size: 14px;
+  color: #ffffff;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding: 0px 70px 0px 40px;
+  display: inline-block;
+  background: #105fff;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.theme-btn2:focus {
+  color: #ffffff;
+}
+.theme-btn2:after {
+  content: "\f061";
+  font-family: "Font Awesome 5 pro";
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  right: 32px;
+}
+.theme-btn2:before {
+  content: "\f86c";
+  font-family: "Font Awesome 5 pro";
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  right: 48px;
+  transform: rotate(90deg);
+}
+.theme-btn2:hover {
   background: #1A1C20;
   color: #ffffff;
 }
@@ -4538,7 +4591,7 @@ input.main-search-input:-ms-input-placeholder {
   content: "";
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to right,  rgba(70, 70, 70, 0.193), rgba(50, 50, 50, 0.593));
   top: 0;
   left: 0;
   transform: scale(1);
@@ -8449,6 +8502,67 @@ input.main-search-input:-ms-input-placeholder {
   .footer-copyright__wrapper.footer-d {
     justify-content: center !important;
   }
+}
+
+.besley-font {
+  font-family: "Besley", serif !important;
+} 
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 50px 0;
+}
+
+.university-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  /* max-width: 300px; */
+  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.university-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.university-card .badge {
+  background-color: #28a745;
+}
+
+.university-card .card-img-top {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.university-card .card-title {
+  font-size: 1.25rem;
+  margin: 15px 0;
+}
+
+.university-card .card-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  /* border-radius: 0; */
+}
+
+.university-card .card-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.university-card .theme-btn {
+  /* border-radius: 20px; */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.university-card .theme-btn:hover {
+  background-color: #007bff;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -35,3 +35,13 @@
 .nav-link.active {
   background-color: #ed2f37 !important;
 }
+
+.calltoaction-area {
+  background-image: url(../assets/img/course/ctaImg.png);
+}
+
+img.px140 {
+  width: 140px;
+  height: 140px;
+  text-align: center;
+}

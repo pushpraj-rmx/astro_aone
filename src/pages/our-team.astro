@@ -5,8 +5,13 @@ import TeamArea from "@components/TeamArea.astro";
 import PageTitle from "@components/Page-Title.astro";
 import TeamHeader from "@components/TeamHeader.astro";
 import Image from "astro/components/Image.astro";
+import Contact from "@components/Contact.astro";
 // images
 import teamImage from "@assets/img/team.webp";
+
+import pageBannerImg from "@assets/img/contact-banner.jpg";
+
+const pageBanner = { url: pageBannerImg.src };
 
 const pageTitle = "Our Team";
 const pageDescription = "";
@@ -17,8 +22,9 @@ const pageAuthor = "";
 <!-- src/pages/index.astro -->
 <MainLayout title={pageTitle} description={pageDescription} keywords={pageKeywords} author={pageAuthor}>
   <main>
-    <PageTitle title={pageTitle} />
+    <PageTitle title="Study in Australia" banner={pageBanner} />
     <TeamHeader />
     <TeamArea />
+    <Contact />
   </main>
 </MainLayout>
